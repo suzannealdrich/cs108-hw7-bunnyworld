@@ -1,0 +1,1 @@
+// CPageStore.h#pragma once#include "Store.h"class CPageStore : public Store {public:	CPageStore();		void getType(StringPtr outType);		void setName(ConstStringPtr name);	void getName(StringPtr outName);		void setPage(Int32 pageNum);	void getPage(Int32& pageNum);};

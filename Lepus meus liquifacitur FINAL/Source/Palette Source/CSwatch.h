@@ -1,0 +1,1 @@
+#include "LGAColorSwatchControl.h"// I override LGAColorSwatchControl drawing for my own layout purposes.class CSwatch : public LGAColorSwatchControl {public:	enum { class_ID = FOUR_CHAR_CODE('cwES') };	CSwatch(LStream *inStream) : LGAColorSwatchControl(inStream) {	}	void DrawSelf();	};

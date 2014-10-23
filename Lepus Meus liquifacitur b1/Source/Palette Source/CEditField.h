@@ -1,0 +1,1 @@
+#pragma once#include <LTextEditView.h>class CEditField : public LTextEditView, public LBroadcaster {public:	enum { class_ID = FOUR_CHAR_CODE('cFLD') };	CEditField(LStream *inStream) : LTextEditView(inStream) {}	void DontBeTarget() {		BroadcastMessage(kScriptEdit,this);		LTextEditView::DontBeTarget();	}};

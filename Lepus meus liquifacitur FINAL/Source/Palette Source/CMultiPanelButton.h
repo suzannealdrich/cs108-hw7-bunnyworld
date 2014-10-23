@@ -1,0 +1,1 @@
+#include <LBevelButton.h>#include <LMultiPanelView.h>// the button for playing sounds in shape editorclass CMultiPanelButton : public LBevelButton {public:	enum { class_ID = FOUR_CHAR_CODE('cmpB') };	CMultiPanelButton(LStream *inStream);	void HotSpotResult(SInt16 inHotSpot);	private:	int mDir;	LMultiPanelView *mpv;};
